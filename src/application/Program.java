@@ -1,6 +1,5 @@
 package application;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -72,6 +71,13 @@ public class Program {
 		department.setName("TI");
 		departmentDao.update(department);
 		System.out.println("Update completed!");
+		
+		System.out.println("\n=== TEST 11: department delete ====");
+		System.out.println("Enter id for delete test: ");
+		int id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Delete completed");
+		
 		sc.close();
 		
 	}
