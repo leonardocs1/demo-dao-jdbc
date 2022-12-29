@@ -56,6 +56,12 @@ public class Program {
 		department = departmentDao.findById(1);
 		System.out.println(department);
 		
+		System.out.println("\n=== TEST 8: department findAll ====");
+		List<Department> departments = departmentDao.findAll();
+		for (Department d : departments) {
+			System.out.println(d);
+		}
+		
 		sc.close();
 		
 	}
